@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make</title>
+    <link rel="stylesheet" href="./make.css">
+</head>
+<body>
+    <main>
+        <div class="left">
+            <div class="aa"></div>
+                <img class="profil" src="../image/free-icon-profile-4519729 (1).png" alt="">
+                <button class="project-make">프로젝트 생성</button>
+                <p>프로젝트 목록</p>
+                <p class="list"></p>
+            </div>
+        </div>
+
+        
+        <div class="right">
+            <div id="new-box">
+                    <p class="close">닫기</p>
+                <input class="project-name" type="text" placeholder="프로젝트 이름">
+                <button class="make">만들기</button>
+            </div>
+
+
+            <div class="new-make-box">
+                <p class="new-mb-close">닫기</p>
+                <div class="new-work">
+                    <input class="new-input-work" type="text" placeholder="할일을 적어주세요">
+                    <select name="중요도선택" id="op-choose">
+                        <option value="" class="e">중요</option>
+                        <option value="" class="f">보통</option>
+                        <option value="" class="g">번외</option>
+                    </select>
+                    <button class="new-work-make">만들기</button>
+                </div>
+            </div>
+            <div class="importance-box">
+                <div class="red-box"></div>
+                <div class="orange-box"></div>
+                <div class="blue-box"></div>
+                <div class="green-box"></div>
+            </div>
+        </div>
+        <div class="dktmd">
+            <div class="p-m">
+                <!-- <h1 class="pp-n"></h1> -->
+                <button class="new-make">새로만들기</button>
+            </div>
+            <div class="class-box">
+                <div class="importance" id="a">
+                    <div class="red" id="two-box"></div>
+                    <p class="p-tag">중요</p>
+                </div>
+                <div class="importance" id="b">
+                    <div class="orange" id="two-box"></div>
+                    <p class="p-tag">보통</p>
+                </div>
+                <div class="importance" id="c">
+                    <div class="blue"></div>
+                    <p class="p-tag">번외</p>
+                </div>
+                <div class="importance" id="d">
+                    <div class="green"></div>
+                    <p class="p-tag">완료</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
