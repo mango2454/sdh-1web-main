@@ -197,13 +197,22 @@ p {
 
 
 .new-make-box {
-    position: absolute;
+    position: fixed;
+    right: -700px;
+    /* 초기 위치를 화면 밖으로 설정 */
+    top: 0;
     width: 700px;
-    height: 100vh;
+    height: 100%;
     background-color: #3C3D37;
-    right: 0;
-    display: none;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.5s ease;
+    /* 슬라이드 애니메이션 */
     z-index: 1000;
+}
+
+.new-make-box.show {
+    right: 0;
+    /* 화면 안으로 슬라이드 */
 }
 
 
