@@ -213,8 +213,8 @@ function createTaskElement(text, isChecked = false) {
     taskContainer.style.display = 'flex';
     taskContainer.style.flexDirection = 'column';
     taskContainer.style.position = 'relative';
-    taskContainer.style.overflow = 'hidden'; // 추가: 내용이 넘칠 경우 숨김
-    taskContainer.style.flexShrink = '0'; // 추가: 화면 크기에 따라 크기 변경 방지
+    taskContainer.style.overflow = 'hidden';
+    taskContainer.style.flexShrink = '0';
 
     const checkboxContainer = document.createElement("div");
     checkboxContainer.style.display = 'flex';
@@ -305,10 +305,9 @@ newWorkMake.addEventListener("click", function () {
         }
 
         saveToLocalStorage();
+        newInputWork.value = "";
+        newMakeBox.classList.remove('show'); // classList.remove('show')로 변경
     }
-
-    newInputWork.value = "";
-    newMakeBox.style.display = "none";
 });
 
 function removeFromOriginalList(projectName, taskContainer) {
