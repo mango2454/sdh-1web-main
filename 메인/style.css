@@ -23,7 +23,7 @@ nav {
     width: 50%;
     height: 100px;
     background-color: black;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
 }
 
 .logo {
@@ -120,7 +120,7 @@ nav {
 
 .card p {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 25px;
 }
 
 .three {
@@ -143,7 +143,8 @@ nav {
 .three-img {
     width: 300px;
     height: 300px;
-    background-color: aqua;
+    /* background-color: aqua; */
+    border-radius: 30px;
 }
 
 .three-sign {
@@ -173,4 +174,5 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 30px;
 }

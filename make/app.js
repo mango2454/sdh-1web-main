@@ -316,4 +316,3 @@ function removeFromOriginalList(projectName, taskContainer) {
     projectTasks[projectName].blue = projectTasks[projectName].blue.filter(task => task !== taskContainer);
     saveToLocalStorage();
 }
-//?
